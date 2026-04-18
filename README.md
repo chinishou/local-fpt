@@ -189,7 +189,7 @@ tests/
 ├── cleanup_cloud.py        # Standalone orphan cleanup script
 ├── test_parity.py          # 56 SDK parity tests (local vs cloud)
 ├── test_rest_api.py        # 20 REST endpoint tests (local-only)
-└── entities/               # 62 per-entity parity tests
+└── entities/               # 70+ per-entity parity tests
     ├── test_project.py
     ├── test_sequence.py
     ├── test_episode.py
@@ -199,7 +199,8 @@ tests/
     ├── test_version.py
     ├── test_playlist.py
     ├── test_humanuser.py
-    └── test_publishedfile.py
+    ├── test_publishedfile.py
+    └── test_ticket.py
 ```
 
 ## Architecture

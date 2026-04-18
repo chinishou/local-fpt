@@ -2,14 +2,14 @@
 
 ## Test Suite Overview
 
-**138 tests total** — all passing against both local LocalFPT and cloud ShotGrid.
+**284 tests total** — local-only tests run always; cloud parity tests require a paid ShotGrid site.
 
 | Suite | Tests | Purpose |
 |---|---|---|
-| `tests/test_parity.py` | 56 | SDK parity: same operation on local + cloud, assert results match |
-| `tests/entities/` (10 files) | 62 | Per-entity CRUD, relationships, field-specific filters |
+| `tests/test_parity.py` | 56+ | SDK parity: same operation on local + cloud, assert results match |
+| `tests/entities/` (11 files) | 70+ | Per-entity CRUD, relationships, field-specific filters |
 | `tests/test_rest_api.py` | 20 | REST endpoints: health, JSON-RPC, error handling, pagination |
-| **Total** | **138** | |
+| **Total** | **284** | |
 
 ## Running Tests
 
@@ -126,6 +126,7 @@ Each entity type has its own test file covering that entity's specific fields an
 | `test_playlist.py` | Playlist | 6 | code, project, contains, create+delete, update, revive |
 | `test_humanuser.py` | HumanUser | 6 | id, active status, login, email, create+update, revive (local-only) |
 | `test_publishedfile.py` | PublishedFile | 6 | code, project, entity→Asset, contains, create+delete, update |
+| `test_ticket.py` | Ticket | 6+ | title, project, status, priority, ticket_type |
 
 ## Cloud ShotGrid Compatibility Notes
 

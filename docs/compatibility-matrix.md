@@ -98,7 +98,7 @@ Current implementation status of ShotGrid API features in LocalFPT.
 
 ## Parity Test Coverage
 
-138 tests verify local-vs-cloud behavior parity:
+284 tests verify local-vs-cloud behavior parity:
 
 | Category | Tests | Verified Operations |
 |---|---|---|
@@ -114,7 +114,7 @@ Current implementation status of ShotGrid API features in LocalFPT.
 | Delete | 3 | Returns true, unfindable, nonexistent |
 | Revive | 1 | Delete → revive → findable |
 | Batch | 3 | Create multiple, mixed ops, delete |
-| All Entity Types | 10 | Each of 10 types findable by ID |
+| All Entity Types | 11 | Each of 11 types findable by ID |
 | Edge Cases | 3 | Empty result, type+id always present, create roundtrip |
-| Per-Entity CRUD | 62 | Entity-specific fields, relationships, lifecycle |
+| Per-Entity CRUD | 70+ | Entity-specific fields, relationships, lifecycle |
 | REST Endpoints | 20 | Health, JSON-RPC, errors, pagination |
